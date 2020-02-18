@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Edit Article</h1>
+  <hr>
+  <div class="row">
+    <%= render "form", article: @article %>
+  </div>
+  <hr>
+  <%= link_to articles_path do %>
+    <i class="fa fa-history"></i> Back to all Articles
+  <% end %>
+</div>

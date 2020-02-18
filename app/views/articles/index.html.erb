@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row d-flex space-between">
+    <h1>All articles</h1>
+    <%= link_to 'Add new article', new_article_path %>
+  </div>
+  <hr>
+  <div class="row">
+    <ul>
+    <% @articles.each do |article| %>
+      <li><%= link_to article.title, article_path(article) %></li>
+    <% end %>
+    </ul>
+  </div>
+</div>
